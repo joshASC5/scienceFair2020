@@ -1,0 +1,21 @@
+header{
+    background-color: #373737;
+    color: whitesmoke;
+}
+h1{
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+h2{
+    background-image: url("../_img/fadedGrey2.jpg");
+    /*background-position: cover;*/
+    color: whitesmoke;
+    background-color: #373737;
+}
+p{
+    font-family: 'Belleza', Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #dcd0c0;
+}
