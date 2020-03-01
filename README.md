@@ -1,2 +1,2 @@
 # scienceFair2020
-My group's website for our AP® Physics C Science Fair project.
+My group's website for our AP&reg; Physics C Science Fair project.
