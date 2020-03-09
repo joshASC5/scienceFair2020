@@ -1,6 +1,8 @@
 :root{
     --tangerine: #e37222;
     --dark-grey: #373737;
+    --teal: #07889b;
+    --tan: #eeaa7b;
 }
 *{
     margin: 0;
@@ -12,31 +14,29 @@
     background-color: var(--tangerine);
     color: #fff;
 }
-h1, h2, h3{
+h1, h2, h3, h4{
     font-family: 'Belleza', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
 }
+h1{
+    font-size: 6vh;
+}
+
 h2{
-    font-size: 5em;
-    padding: 1em 1em 0.5em;
+    font-size: 13vh;
+    padding: 0.5em 1em 0.2em;
 }
 h3{
     margin-top: 2em;
-    font-size: 1.5em;
+    font-size: 4vh;
 }
 h2, .banner p{
     text-align: center;
 }
 .banner p{
-    font-size: 1.2em;
+    padding-bottom: 0.5em;
+    margin: 0 1.5em;
 }
- /* --------------- ORDINARY TEXT --------------- */
-p, li, a{
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-}
-
-
 
 /* --------------- NAVBAR --------------- */
 nav{
@@ -62,9 +62,9 @@ nav ul li{
 }
 nav ul li a{
     color: whitesmoke;
-    font-size: 1.5em;
     font-weight: bold;
     text-decoration: none;
+    font-size: 3.5vh;
 }
 nav ul li:hover{
     /*background-color: #595959; */
@@ -74,42 +74,32 @@ nav ul li:hover{
 }
 
 /* --------------- MAIN CONTENT --------------- */
-article, aside{
-    margin: 1em;
+main{
+    background-color: whitesmoke;
+    padding: 1em 0;
+}
+article{
+    width: 80%;
+    margin: 1em auto;
     padding: 0.5em;
+    background-color: #fff;
+    box-shadow: 0 0 6px 1vh #ccc;
 }
 article p{
     margin-bottom: 2em;
 }
 section ul{
-    text-indent: 2em;
     list-style-type: none;
 }
 aside{
-    background-color: #07889b;
+    margin: 1em;
+    padding: 0.5em;
+    background-color: var(--teal);
     color: #fff;
     box-shadow: 0 0 6px 1vh #ccc;
 }
 aside h3{
     margin-top: 1em;
-}
-
-/* --------------- IMAGES --------------- */
-img{
-    width: 100%;
-    height: 100%;
-}
-
-/* --------------- SPECIFIC TO index.html ---------------*/
-#indexMain{
-    display: flex;
-    flex-direction: row-reverse;
-}
-#indexMain > article{
-    flex-basis: 80%;
-}
-#indexMain > aside{
-   flex-basis: 20%;
 }
 
 /* --------------- FOOTER --------------- */
@@ -132,29 +122,226 @@ footer a:hover{
     color: #fff;
 }
 
+/* --------------- ORDINARY TEXT --------------- */
+h4, p, li, a{
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 2.5vh;
+}
+a{
+    color: goldenrod;
+}
+a:hover{
+    color: #fff;
+}
+li{
+    list-style-position: inside;
+}
+.equations{
+    background-color: var(--tan);
+    border-left: 10px solid var(--teal);
+    padding-left: 1em;
+    font-family: 'Computer Modern', modern-serif, serif;
+    font-size: 2.75vh;
+}
+
+/* --------------- IMAGES --------------- */
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/* --------------- SPECIFIC TO index.html ---------------*/
+#indexMain{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#indexMain > article, #indexMain > aside{
+    margin: 1em;
+    padding: 0.5em;
+    box-shadow: 0 0 6px 1vh #ccc;
+}
+#indexMain > article{
+    flex-basis: 75%;
+}
+#indexMain > aside{
+   flex-basis: 25%;
+}
+#indexMain > aside > p > img{
+    display: block;
+}
+
+/* --------------- SPECIFIC TO friction.html --------------- */
+
+
+/* --------------- SPECIFIC TO experiment.html --------------- */
+#expArticle ul{
+    list-style-type: initial;
+    padding-left: 2vw;
+}
+#expArticle ol{
+    padding-left: 2vw;
+}
+#expArticle ol ol{
+    padding-left: 4vw;
+}
+#expArticle ol ol ul{
+    padding-left: 6vw;
+}
+.imgContainers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: 3% 0;
+}
+.imgContainers img{
+    width: 48%;
+    margin: 1%;
+    box-shadow: 0 0 6px 2px #ccc;
+}
+table{
+    background-color: var(--tan);
+    border-collapse: collapse;
+    padding: 1em;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+td, th{
+    border: 1px solid #fff;
+    padding: 0.5em;
+}
+.graph{
+    display: block;
+    width: 98%;
+    margin: 1% auto;
+}
+.repeating{
+    text-decoration: overline;
+}
+
+/* --------------- SCRIPTING CSS FOR experiment.html --------------- */
+.tabPanels:hover{
+    color: goldenrod;
+    cursor: pointer;
+}
+.noshow{
+    display: none;
+}
+
+/* --------------- SPECIFIC TO bios.html --------------- */
+#bioBody{
+    background-color: whitesmoke;
+}
+#bioMain{
+    margin: 1em;
+}
+#bioMain section{
+    margin: 5em 0;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 6px 1vh #ccc;
+    background-color: #fff;
+}
+#bioMain section img{
+    box-shadow: 0 0 1px 0.1vh #ccc;
+    width: 30%;
+    object-fit: contain;
+}
+#bioMain section p{
+    margin: auto 2em;
+    height: 50%;
+}
+
 /* --------------- RESPONSIVE DESIGN --------------- */
-@media(max-width: 1100px){
+@media(min-width: 2560px){
+    h1{
+        font-size: 5.5vh
+    }
     h2{
-        font-size: 4em;
+        font-size: 12vh;
+    }
+    h3{
+        font-size: 4.5vh;
+    }
+    h4, p, li, a, .banner p, table{
+        font-size: 3vh;
     }
 }
 @media(max-width: 1000px){
+    nav{
+        background-size: cover;
+    }
     nav ul{
         display: flex;
         flex-direction: column;
     }
     nav ul li{
         text-align: center;
-        font-size: 0.8em;
+    }
+    .imgContainers{
+        display: block;
+    }
+    .imgContainers > img, aside img{
+        width: 98%;
+        margin: 1% auto;
     }
 }
 @media(max-width: 900px){
     #indexMain{
-        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+    #indexMain > article{
+        width: 95%;
+        margin: 1vh auto;
     }
     img{
         width: 25%;
         height: 25%;
-        float: center;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 750px){
+    #bioMain section{
+        margin: 2.5em 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #bioMain section img{
+        width: 50%;
+        margin: 0 auto;
+    }
+    #bioMain section p{
+        margin: 1vh 1vw;
+        text-align: justify;
+    }
+    article{
+        width: 95vw;
+    }
+}
+@media(max-width: 500px){
+    td, th{
+        padding: 0.1vw;
+    }
+}
+@media(max-width: 450px){
+    h1{
+        font-size: 7.5vw;
+    }
+    h2{
+        font-size: 15vw;
+        padding: 0.5em 0.5em 0.2em;
+    }
+    .banner p{
+        display: none;
+    }
+    nav{
+        margin: 0;
+        box-shadow: none;
     }
 }
