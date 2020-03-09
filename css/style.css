@@ -41,7 +41,7 @@ h2, .banner p{
 /* --------------- NAVBAR --------------- */
 nav{
     /* background-color: var(--dark-grey); */
-    background-image: url("fadedGrey.jpg");
+    background-image: url("../img/fadedGrey.jpg");
     backdrop-filter: blur(0.8);
     box-shadow: 0 0 6px 0.9vh #000;
     margin: 1vh 0;
